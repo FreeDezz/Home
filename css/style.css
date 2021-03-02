@@ -412,6 +412,7 @@ main {
   }
   .head .container_nav .nav ul .nav_item ul {
     margin-left: -15px;
+    padding: 0 5px;
   }
   .head .container_nav .nav ul .nav_item:last-child {
     padding: 10px;
