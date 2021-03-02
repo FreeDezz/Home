@@ -565,13 +565,12 @@ main {
   }
 
   .support_item_img {
-    position: inherit;
+    height: 230px;
     max-height: none;
   }
   .support_item_img img {
-    position: inherit;
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 1137px) {
