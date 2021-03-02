@@ -400,6 +400,7 @@ main {
   .head .container_nav .nav ul {
     width: 100%;
     justify-content: center;
+    padding: 80px 0;
   }
   .head .container_nav .nav ul .nav_item {
     width: 25%;
@@ -408,6 +409,9 @@ main {
   .head .container_nav .nav ul .nav_item a {
     font-size: 14px;
     padding: 0;
+  }
+  .head .container_nav .nav ul .nav_item ul {
+    margin-left: -15px;
   }
   .head .container_nav .nav ul .nav_item:last-child {
     padding: 10px;

@@ -472,6 +472,7 @@ main {
         ul {
           width: 100%;
           justify-content: center;
+          padding: 80px 0;
 
           .nav_item {
             width: 25%;
@@ -480,6 +481,9 @@ main {
             a {
               font-size: 14px;
               padding: 0;
+            }
+            ul {
+              margin-left: -15px;
             }
           }
 
