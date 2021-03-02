@@ -85,10 +85,10 @@ main {
   background-color: #222a3c;
   flex-direction: column;
   margin-left: -30px;
-  clip: rect(0 0 0 0);
+  opacity: 0;
   width: 108%;
   border-top: 2px solid #ffffff;
-  transition: all ease-out 1s;
+  transition: all ease-out 0.6s;
 }
 .head .container_nav .nav ul .nav_item ul li {
   list-style-type: none;
@@ -107,8 +107,8 @@ main {
   transition: all ease-out 0.3s;
 }
 .head .container_nav .nav ul .nav_item:hover ul {
-  clip: auto;
-  transition: all ease-out 1s;
+  opacity: 1;
+  transition: all ease-out 0.6s;
 }
 .head .container_nav .nav ul .nav_item:last-child {
   padding-right: 0;
@@ -133,7 +133,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #4d7f76;
+  background-color: #385c56;
   transition: all ease-out 0.5s;
   color: white !important;
 }
@@ -142,15 +142,16 @@ main {
 /*background_video*/
 .video_bg {
   width: 100%;
-  max-height: 715px;
+  max-height: 800px;
+  min-height: 700px;
   overflow: hidden;
   position: relative;
 }
 .video_bg .header_inner {
   position: absolute;
   top: 30%;
-  left: 10%;
-  width: 45%;
+  width: 100%;
+  left: 5%;
   max-width: 1520px;
   margin: 0 auto;
   color: white;
@@ -169,8 +170,13 @@ main {
   font-weight: 400;
 }
 .video_bg .full_bg {
-  width: 100%;
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 /*container*/
@@ -208,6 +214,11 @@ main {
   color: white;
   border: none;
   cursor: pointer;
+  transition: all ease-out 0.4s;
+}
+.enterprise .btn_fulls:hover {
+  background-color: #589288;
+  transition: all ease-out 0.4s;
 }
 .enterprise .enterprise_content {
   display: flex;
@@ -375,7 +386,7 @@ main {
   }
 
   .header {
-    background-image: url(../images/Header_vid/bg.jpg);
+    background-image: url(../images/Header_vid/bg.png);
     height: auto;
   }
 
@@ -415,8 +426,7 @@ main {
     font-size: 55px;
   }
   .video_bg .full_bg {
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   .enterprise {
@@ -481,12 +491,11 @@ main {
     font-size: 55px;
   }
   .video_bg .full_bg {
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   .header {
-    background-image: url(../images/Header_vid/bg.jpg);
+    background-image: url(../images/Header_vid/bg.png);
     height: auto;
   }
 

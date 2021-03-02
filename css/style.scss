@@ -94,10 +94,10 @@ main {
             background-color: $color_blue;
             flex-direction: column;
             margin-left: -30px;
-            clip: rect(0 0 0 0);
+            opacity: 0;
             width: 108%;
             border-top: 2px solid #ffffff;
-            transition: all ease-out 1s;
+            transition: all ease-out 0.6s;
 
             li {
               list-style-type: none;
@@ -122,8 +122,8 @@ main {
         }
 
         .nav_item:hover ul {
-          clip: auto;
-          transition: all ease-out 1s;
+          opacity: 1;
+          transition: all ease-out 0.6s;
         }
 
         .nav_item:last-child {
@@ -157,7 +157,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #4d7f76;
+  background-color: #385c56;
   transition: all ease-out 0.5s;
   color: white !important;
 }
@@ -168,7 +168,8 @@ main {
 /*background_video*/
 .video_bg {
   width: 100%;
-  max-height: 715px;
+  max-height: 800px;
+  min-height: 700px;
   overflow: hidden;
   position: relative;
 
@@ -176,8 +177,8 @@ main {
   .header_inner {
     position: absolute;
     top: 30%;
-    left: 10%;
-    width: 45%;
+    width: 100%;
+    left: 5%;
     max-width: 1520px;
     margin: 0 auto;
     color: white;
@@ -200,8 +201,13 @@ main {
   }
 
   .full_bg {
-    width: 100%;
-    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -245,6 +251,12 @@ main {
     color: white;
     border: none;
     cursor: pointer;
+    transition: all ease-out 0.4s;
+  }
+
+  .btn_fulls:hover {
+    background-color: $main_color;
+    transition: all ease-out 0.4s;
   }
 
 
@@ -353,9 +365,9 @@ main {
     width: auto;
     max-height: 100%;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     object-fit: cover;
   }
 }
@@ -445,28 +457,32 @@ main {
   }
 
 
-
-.header {
-  background-image: url(../images/Header_vid/bg.jpg);
-  height: auto;
-}
-  .head{
+  .header {
+    background-image: url(../images/Header_vid/bg.png);
+    height: auto;
+  }
+  .head {
     .container_nav {
       flex-direction: column;
-      .nav{
+
+      .nav {
         width: 100%;
         justify-content: center;
-        ul{
+
+        ul {
           width: 100%;
           justify-content: center;
+
           .nav_item {
             width: 25%;
             padding: 10px;
-            a{
+
+            a {
               font-size: 14px;
               padding: 0;
             }
           }
+
           .nav_item:last-child {
             padding: 10px;
           }
@@ -478,17 +494,19 @@ main {
   .video_bg {
     height: 1000px;
     max-height: 750px;
+
     .header_inner {
       width: 100%;
       left: 0;
       text-align: center;
-      h1{
+
+      h1 {
         font-size: 55px;
       }
     }
+
     .full_bg {
-      width: 0;
-      height: 0;
+      display: none;
     }
   }
 
@@ -496,19 +514,20 @@ main {
   .enterprise {
     height: auto;
     max-height: none;
-    .enterprise_content{
+
+    .enterprise_content {
       flex-direction: column;
-      .enterprise_item{
+
+      .enterprise_item {
         width: 70%;
         margin: 20px auto 0;
       }
+
       .enterprise_item:nth-child(3) {
         margin: 20px auto 0;
       }
     }
   }
-
-
 
 
   .support {
@@ -517,25 +536,23 @@ main {
   }
   .support_content {
     flex-direction: column;
+
     .support_item {
-      width:95%;
+      width: 95%;
       margin: 55px auto;
     }
   }
 
 
-
-
-
-
-
   .footer {
     padding: 0 15px;
-    .container{
-      .nav_footer{
-        ul{
+
+    .container {
+      .nav_footer {
+        ul {
           flex-wrap: wrap;
-          li{
+
+          li {
             width: 100%;
             padding-right: 0;
           }
@@ -545,13 +562,11 @@ main {
   }
 
 
-
-
-
   .support_item_img {
 
     height: 230px;
     max-height: none;
+
     img {
 
       height: 100%;
@@ -565,48 +580,53 @@ main {
   .video_bg {
     height: 1000px;
     max-height: 750px;
+
     .header_inner {
       width: 100%;
       left: 0;
       text-align: center;
-      h1{
+
+      h1 {
         font-size: 55px;
       }
     }
+
     .full_bg {
-      width: 0;
-      height: 0;
+      display: none;
     }
   }
 
 
-
   .header {
-    background-image: url(../images/Header_vid/bg.jpg);
+    background-image: url(../images/Header_vid/bg.png);
     height: auto;
   }
 
 
-
-  .head{
+  .head {
     .container_nav {
       .logo {
         width: 20%;
       }
-      .nav{
+
+      .nav {
         width: 100%;
         justify-content: center;
-        ul{
+
+        ul {
           width: 100%;
           justify-content: center;
+
           .nav_item {
             width: 25%;
             padding: 10px;
-            a{
+
+            a {
               font-size: 18px;
               padding: 0;
             }
           }
+
           .nav_item:last-child {
             padding: 10px;
           }
@@ -631,12 +651,15 @@ main {
 
   .enterprise {
     height: auto;
-    .enterprise_content{
+
+    .enterprise_content {
       flex-direction: column;
-      .enterprise_item{
+
+      .enterprise_item {
         width: 70%;
         margin: 20px auto 0;
       }
+
       .enterprise_item:nth-child(3) {
         margin: 20px auto 0;
       }
@@ -644,13 +667,12 @@ main {
   }
 
 
-
-
   .support {
     height: auto;
   }
   .support_content {
     flex-direction: column;
+
     .support_item {
       width: 70%;
       margin: 55px auto;
@@ -658,20 +680,17 @@ main {
   }
 
 
-
-
-
-
-
   .footer {
     padding: 0 15px;
-    .container{
-      .nav_footer{
-        ul{
 
-          li{
+    .container {
+      .nav_footer {
+        ul {
+
+          li {
             width: 100%;
             padding-right: 0;
+
             a {
               font-size: 15px;
             }
@@ -682,13 +701,11 @@ main {
   }
 
 
-
-
-
   .support_item_img {
 
     height: 230px;
     max-height: none;
+
     img {
 
       height: 100%;
@@ -698,10 +715,11 @@ main {
 
 
 }
-@media  (max-width: 1137px) {
-  .video_bg{
-    .header_inner{
-      h1{
+
+@media (max-width: 1137px) {
+  .video_bg {
+    .header_inner {
+      h1 {
         font-size: 55px;
       }
     }
@@ -709,13 +727,13 @@ main {
 
 }
 
-@media  (max-width: 350px) {
-  .head{
-    .container_nav{
-      .nav{
-        ul{
-          .nav_item{
-            a{
+@media (max-width: 350px) {
+  .head {
+    .container_nav {
+      .nav {
+        ul {
+          .nav_item {
+            a {
               padding-left: 0;
             }
           }
