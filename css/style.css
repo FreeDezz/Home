@@ -787,7 +787,7 @@ main {
   }
   .head .container_nav .nav ul .nav_item .nav_item_menu {
     display: flex;
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
   .head .container_nav .nav ul .nav_item .nav_item_menu .click_item {
     position: absolute;
@@ -809,7 +809,7 @@ main {
     left: 0;
     position: absolute;
     width: 100vw;
-    top: 48px;
+    top: 67px;
     background: #ccc;
   }
   .head .container_nav .nav ul .nav_item .btn {
@@ -848,10 +848,7 @@ main {
   }
 
   .btn {
-    font-size: 18px !important;
-    padding: 4px !important;
     margin-right: 10px;
-    max-width: 67px;
   }
 
   .enterprise {
