@@ -568,7 +568,10 @@ main {
     background-image: url(../images/Header_vid/bg.png);
     height: auto;
   }
+
+
   .head {
+
     .container_nav {
       .show.nav {
         display: flex;
@@ -580,6 +583,17 @@ main {
         height: 100vh;
         background-color: #FFFFFF;
         transition: all ease-out 0.2s;
+        ul {
+          .nav_item {
+            ul {
+              margin-top: 20px;
+            }
+
+            a {
+              font-size: 19px;
+            }
+          }
+        }
       }
 
       .nav {
@@ -607,6 +621,7 @@ main {
               .logo {
                 margin-top: 7px;
                 padding-left: 30px;
+                max-width: 60px;
               }
               .burger {
                 margin-right: 27px;

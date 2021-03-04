@@ -492,6 +492,12 @@ main {
     background-color: #FFFFFF;
     transition: all ease-out 0.2s;
   }
+  .head .container_nav .show.nav ul .nav_item ul {
+    margin-top: 20px;
+  }
+  .head .container_nav .show.nav ul .nav_item a {
+    font-size: 19px;
+  }
   .head .container_nav .nav {
     display: flex;
     position: absolute;
@@ -520,6 +526,7 @@ main {
   .head .container_nav .nav ul .logo_mobile .nav_item_menu .logo {
     margin-top: 7px;
     padding-left: 30px;
+    max-width: 60px;
   }
   .head .container_nav .nav ul .logo_mobile .nav_item_menu .burger {
     margin-right: 27px;
