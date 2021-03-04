@@ -37,6 +37,9 @@ main {
 .fixed.head .container_nav .nav ul .nav_item a {
   font-size: 19px;
 }
+.fixed.head .container_nav .nav ul .nav_item .btn {
+  font-size: 22px !important;
+}
 
 .head {
   display: flex;
@@ -344,7 +347,6 @@ main {
 .support {
   width: 100%;
   background-color: #e8e9ea;
-  height: 100%;
   max-height: 900px;
   padding-bottom: 80px;
   padding-top: 20px;
@@ -393,7 +395,7 @@ main {
 
 .support_item_img {
   width: 100%;
-  height: 100%;
+  height: 273px;
   max-height: 273px;
   position: relative;
   overflow: hidden;
@@ -496,7 +498,7 @@ main {
     margin-top: 20px;
   }
   .head .container_nav .show.nav ul .nav_item a {
-    font-size: 19px;
+    font-size: 22px !important;
   }
   .head .container_nav .nav {
     display: flex;
@@ -554,7 +556,7 @@ main {
   }
   .head .container_nav .nav ul .nav_item .nav_item_menu {
     display: flex;
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
   .head .container_nav .nav ul .nav_item .nav_item_menu .click_item {
     position: absolute;
@@ -581,7 +583,7 @@ main {
     left: 0;
     position: absolute;
     width: 100vw;
-    top: 48px;
+    top: 67px;
     background: #ccc;
   }
   .head .container_nav .nav ul .nav_item .btn {
