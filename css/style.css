@@ -106,13 +106,23 @@ main {
   font-weight: 700;
   padding-left: 12px;
   transition: all ease-out 0.3s;
+  display: flex;
+}
+.head .container_nav .nav ul .nav_item a span {
+  font-family: "fontello";
+  font-size: 40px;
+  color: #589288;
+  transition: all ease-out 0.3s;
+}
+.head .container_nav .nav ul .nav_item a p {
+  margin: 8px 0 0;
 }
 .head .container_nav .nav ul .nav_item .subclass_nav {
   position: absolute;
   flex-direction: column;
   margin-top: 10px;
   opacity: 0;
-  border-top: 2px solid #ffffff;
+  border: 2px solid #222a3c;
   left: calc(50% - 200px);
   width: 400px;
   padding: 20px 15px 0;
@@ -151,12 +161,16 @@ main {
   color: #589288 !important;
   transition: all ease-out 0.3s;
 }
+.head .container_nav .nav ul a:hover span {
+  color: #222a3c;
+  transition: all ease-out 0.3s;
+}
 .head .container_nav .nav ul .nav_item:hover .subclass_nav {
   opacity: 1;
   transition: all ease-out 0.6s;
 }
 .head .container_nav .nav ul .nav_item:last-child {
-  padding-right: 0;
+  padding: 9px;
 }
 .head .container_nav .burger {
   display: none;
@@ -203,7 +217,7 @@ main {
   border: none;
   margin-left: 10px;
   outline: none;
-  width: 115px;
+  max-width: 85px;
   max-height: 45px;
   text-decoration: none;
   transition: all ease-out 0.2s;
@@ -707,9 +721,10 @@ main {
   }
 
   .btn {
-    font-size: 18px;
-    padding: 4px;
+    font-size: 18px !important;
+    padding: 4px !important;
     margin-right: 10px;
+    max-width: 67px;
   }
 
   .enterprise {
