@@ -631,6 +631,7 @@ main {
   .video_bg .header_inner {
     width: 100%;
     left: 0;
+    top: 20%;
     text-align: center;
   }
   .video_bg .header_inner h1 {
