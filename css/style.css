@@ -41,6 +41,10 @@ main {
   font-size: 22px !important;
 }
 
+.fixed_remove {
+  position: relative !important;
+}
+
 .head {
   display: flex;
   position: fixed;
@@ -724,6 +728,8 @@ main {
     height: 100vh;
     background-color: #FFFFFF;
     transition: all ease-out 0.2s;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .head .container_nav .show.nav ul .nav_item ul {
     margin-top: 20px;

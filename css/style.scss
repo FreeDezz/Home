@@ -53,7 +53,9 @@ main {
     }
   }
 }
-
+.fixed_remove {
+  position: relative!important;
+}
 .head {
   display: flex;
   position: fixed;
@@ -867,6 +869,8 @@ main {
         height: 100vh;
         background-color: #FFFFFF;
         transition: all ease-out 0.2s;
+        overflow-x: hidden;
+        overflow-y: auto;
         ul {
           .nav_item {
             ul {
