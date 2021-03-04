@@ -153,9 +153,6 @@ main {
   border-right: 7px solid transparent;
   border-bottom: 7px solid #fff;
 }
-.head .container_nav .nav ul .nav_item .active_icon.icon_arrow {
-  transform: rotate(180deg);
-}
 .head .container_nav .nav ul .nav_item:hover {
   color: #589288;
   transition: all ease-out 0.3s;
@@ -568,8 +565,13 @@ main {
     top: 2%;
     left: 0;
   }
+  .head .container_nav .nav ul .nav_item .nav_item_menu .active_icon.icon_arrow {
+    transform: rotate(180deg);
+    transition: all ease-out 0.3s;
+  }
   .head .container_nav .nav ul .nav_item .nav_item_menu .icon_arrow {
     display: block;
+    transition: all ease-out 0.3s;
   }
   .head .container_nav .nav ul .nav_item .nav_item_menu a {
     color: #222a3c;
@@ -585,7 +587,6 @@ main {
     background: #ccc;
   }
   .head .container_nav .nav ul .nav_item .btn {
-    width: 20%;
     padding-left: 10px;
   }
   .head .container_nav .nav ul .nav_item .active.subclass_nav_1 {

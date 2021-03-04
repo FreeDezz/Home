@@ -172,9 +172,6 @@ main {
             border-right: 7px solid transparent;
             border-bottom: 7px solid #fff;
           }
-          .active_icon.icon_arrow {
-            transform: rotate(180deg);
-          }
         }
 
         .nav_item:hover {
@@ -656,8 +653,13 @@ main {
                   top: 2%;
                   left: 0;
                 }
+              .active_icon.icon_arrow {
+                transform: rotate(180deg);
+                transition: all ease-out 0.3s;
+              }
               .icon_arrow {
                 display: block;
+                transition: all ease-out 0.3s;
               }
 
               a {
@@ -680,7 +682,6 @@ main {
 
 
             .btn {
-              width: 20%;
               padding-left: 10px;
             }
             .active.subclass_nav_1{
