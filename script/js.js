@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll' , function() {
         if (pageYOffset > offsetHeight + headheight) {
             head.classList.add('fixed');
-            nav.classList.remove('show');
         }else {
             head.classList.remove('fixed');
         }
@@ -32,11 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let click_item = document.querySelectorAll('.click_item'),
         nav_item = document.querySelectorAll('.nav_item'),
+        icon_arrow = document.querySelectorAll('.icon_arrow'),
         number = 0;
     let subclass_nav = document.getElementById('subclass_nav');
 
     click_item = Array.from(click_item);
     nav_item = Array.from(nav_item);
+    icon_arrow = Array.from(icon_arrow);
 
     click_item.forEach(function (item) {
         item.onclick = (e) => {
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let q = nav_item[art].childElementCount;
             if (q === 2) {
                 subclass_nav.classList.toggle('active');
+                icon_arrow[art].classList.toggle('active_icon');
             }
             number = art;
         }
