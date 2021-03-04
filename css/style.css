@@ -725,6 +725,12 @@ main {
     background-color: #FFFFFF;
     transition: all ease-out 0.2s;
   }
+  .head .container_nav .show.nav ul .nav_item ul {
+    margin-top: 20px;
+  }
+  .head .container_nav .show.nav ul .nav_item a {
+    font-size: 22px !important;
+  }
   .head .container_nav .nav {
     display: flex;
     position: absolute;

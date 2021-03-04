@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let burger_close = document.getElementById('burger_close');
     let headheight = head.offsetHeight;
     let nav = document.getElementById('nav');
-
+    let subclass_nav = document.getElementById('subclass_nav');
 
     window.addEventListener('scroll' , function() {
         if (pageYOffset > offsetHeight + headheight) {
@@ -19,9 +19,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+    function resize() {
+        if (window.innerWidth <= 1023) {
+            subclass_nav.classList.remove('subclass_nav');
+        } else {
+            subclass_nav.classList.add('subclass_nav');
+        }
+    }
+    window.onresize = resize;
+
+
+
+    
+
+
     burger.onclick = function() {
         nav.classList.toggle('show');
-        subclass_nav.classList.remove('subclass_nav');
+
     }
     burger_close.onclick = function() {
         nav.classList.toggle('show');
@@ -33,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nav_item = document.querySelectorAll('.nav_item'),
         icon_arrow = document.querySelectorAll('.icon_arrow'),
         number = 0;
-    let subclass_nav = document.getElementById('subclass_nav');
+
 
     click_item = Array.from(click_item);
     nav_item = Array.from(nav_item);

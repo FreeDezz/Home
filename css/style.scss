@@ -867,7 +867,17 @@ main {
         height: 100vh;
         background-color: #FFFFFF;
         transition: all ease-out 0.2s;
+        ul {
+          .nav_item {
+            ul {
+              margin-top: 20px;
+            }
 
+            a {
+              font-size:22px!important;
+            }
+          }
+        }
       }
 
       .nav {
