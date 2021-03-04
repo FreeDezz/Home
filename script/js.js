@@ -37,12 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
     burger.onclick = function() {
         nav.classList.toggle('show');
         subclass_nav.classList.remove('subclass_nav');
-       /* head.classList.add('fixed_remove');*/
 
     }
     burger_close.onclick = function() {
         nav.classList.toggle('show');
-        head.classList.remove('fixed_remove');
     }
 
 
