@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let q = nav_item[art].childElementCount;
             if (q === 2) {
                 subclass_nav.classList.toggle('active');
-                icon_arrow[art].classList.toggle('active_icon');
+                icon_arrow[0].classList.toggle('active_icon');
             }
             number = art;
         }
