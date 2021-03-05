@@ -767,7 +767,7 @@ main {
     overflow-y: auto;
   }
   .head .container_nav .show.nav ul .nav_item ul {
-    margin: 10px 0 10px 45px !important;
+    margin-top: 1px;
   }
   .head .container_nav .show.nav ul .nav_item a {
     font-size: 22px !important;
@@ -863,6 +863,7 @@ main {
     height: 170px;
     left: 0;
     transition: all ease-out 0.2s;
+    margin: 5px 0 5px 45px !important;
   }
   .head .container_nav .nav ul .nav_item .subclass_nav_1 {
     background-color: #FFFFFF;
