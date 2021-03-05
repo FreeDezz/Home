@@ -518,7 +518,6 @@ main {
     padding-top: 5px;
     max-width: 60px;
     transition: all ease-out 0.2s;
-    z-index: 5000;
   }
   .head .container_nav .show.nav {
     display: flex;
@@ -563,9 +562,9 @@ main {
     justify-content: space-between;
   }
   .head .container_nav .nav ul .logo_mobile .nav_item_menu .logo {
-    margin-top: 7px;
     padding-left: 30px;
     max-width: 60px;
+    padding-top: 0 !important;
   }
   .head .container_nav .nav ul .logo_mobile .nav_item_menu .burger {
     margin-right: 29px;
@@ -750,7 +749,6 @@ main {
     padding-top: 5px;
     max-width: 60px;
     transition: all ease-out 0.2s;
-    z-index: 5000;
   }
   .head .container_nav .burger {
     display: block;
@@ -769,7 +767,7 @@ main {
     overflow-y: auto;
   }
   .head .container_nav .show.nav ul .nav_item ul {
-    margin-top: 20px;
+    margin-top: 1px !important;
   }
   .head .container_nav .show.nav ul .nav_item a {
     font-size: 22px !important;
@@ -801,9 +799,9 @@ main {
     justify-content: space-between;
   }
   .head .container_nav .nav ul .logo_mobile .nav_item_menu .logo {
-    margin-top: 7px;
     padding-left: 30px;
     max-width: 60px;
+    padding-top: 0 !important;
   }
   .head .container_nav .nav ul .logo_mobile .nav_item_menu .burger {
     margin-right: 29px;
@@ -871,7 +869,7 @@ main {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     height: 0;
     left: 100%;
-    margin: 2px 45px;
+    margin: 20px 45px 0 !important;
     transition: all ease-out 0.2s;
     margin-top: 0 !important;
   }
@@ -886,9 +884,6 @@ main {
   }
   .head .container_nav .nav ul .nav_item .subclass_nav_1 li a p {
     margin: 13px 0 0 21px;
-  }
-  .head .container_nav .nav ul .nav_item ul:hover {
-    position: relative;
   }
 
   .btn {
