@@ -175,12 +175,11 @@ main {
           }
           .subclass_nav:before {
             content: "";
-            border: solid transparent;
+            border: 9px solid transparent;
             position: absolute;
             bottom: 100%;
             left: 49%;
             border-bottom-color: #eee;
-            border-width: 9px;
             margin-right: -1px;
             z-index: 999999;
           }
@@ -669,8 +668,6 @@ main {
         transition: all ease-out 0.2s;
       }
       .show.nav {
-        display: flex;
-        position: absolute;
         top: 0;
         left: 0;
         z-index: 2002;
@@ -704,9 +701,6 @@ main {
         transition: all ease-out 0.2s;
 
         ul {
-          flex-direction: column;
-          justify-content: start;
-
           .logo_mobile {
             display: flex;
             height: 55px;

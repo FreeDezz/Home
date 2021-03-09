@@ -151,12 +151,11 @@ main {
 }
 .head .container_nav .nav ul .nav_item .subclass_nav:before {
   content: "";
-  border: solid transparent;
+  border: 9px solid transparent;
   position: absolute;
   bottom: 100%;
   left: 49%;
   border-bottom-color: #eee;
-  border-width: 9px;
   margin-right: -1px;
   z-index: 999999;
 }
@@ -575,8 +574,6 @@ main {
     transition: all ease-out 0.2s;
   }
   .head .container_nav .show.nav {
-    display: flex;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 2002;
@@ -599,10 +596,6 @@ main {
     height: 100vh;
     background-color: #FFFFFF;
     transition: all ease-out 0.2s;
-  }
-  .head .container_nav .nav ul {
-    flex-direction: column;
-    justify-content: start;
   }
   .head .container_nav .nav ul .logo_mobile {
     display: flex;
