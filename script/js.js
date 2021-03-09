@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     let head = document.getElementById('head');
     let offsetHeight = document.getElementById('head').offsetHeight;
@@ -8,16 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let nav = document.getElementById('nav');
     let subclass_nav = document.getElementById('subclass_nav');
 
-    window.addEventListener('scroll' , function() {
+    window.addEventListener('scroll', function () {
         if (pageYOffset > offsetHeight + headheight) {
             head.classList.add('fixed');
-        }else {
+        } else {
             head.classList.remove('fixed');
         }
     });
-
-
-
 
 
     function resize() {
@@ -27,22 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
             subclass_nav.classList.add('subclass_nav');
         }
     }
+
     window.onresize = resize;
 
 
-
-    
-
-
-    burger.onclick = function() {
+    burger.onclick = function () {
         nav.classList.toggle('show');
         subclass_nav.classList.remove('subclass_nav');
 
     }
-    burger_close.onclick = function() {
+    burger_close.onclick = function () {
         nav.classList.toggle('show');
     }
-
 
 
     let click_item = document.querySelectorAll('.click_item'),
@@ -68,6 +61,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    const animItems = document.querySelectorAll('._anim-item');
+
+
+    if (animItems.length > 0) {
+        window.addEventListener('scroll', animOnScroll);
+
+        function animOnScroll(param) {
+
+            for (let i = 0; i < animItems.length; i++) {
+                const animItem = animItems[i];
+                const animItemHeight = animItem.offsetHeight;
+                const animItemOffset = offset(animItem).top
+                const animStart = 4;
+
+                let animItemPoint = window.innerHeight - animItemHeight / animStart;
+                if (animItemHeight > window.innerHeight) {
+                    animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                }
+                if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+                    animItem.classList.add('active_animation');
+                }
+            }
+
+        }
+        function offset(el) {
+            const rect = el.getBoundingClientRect(),
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return {top: rect.top + scrollTop}
+        }
+    }
+    animOnScroll();
 
 
 })
