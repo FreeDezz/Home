@@ -584,6 +584,10 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
   }
+  .head .container_nav .show.nav ul {
+    flex-direction: column;
+    justify-content: start;
+  }
   .head .container_nav .show.nav ul .nav_item a {
     font-size: 22px !important;
   }

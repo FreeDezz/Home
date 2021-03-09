@@ -678,6 +678,8 @@ main {
         overflow-x: hidden;
         overflow-y: auto;
         ul {
+          flex-direction: column;
+          justify-content: start;
           .nav_item {
             ul {
 
