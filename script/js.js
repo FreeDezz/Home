@@ -91,7 +91,11 @@ document.addEventListener('DOMContentLoaded', function () {
             return {top: rect.top + scrollTop}
         }
     }
-    animOnScroll();
 
+
+
+
+
+    animOnScroll();
 
 })
